@@ -1,0 +1,141 @@
+@import url(https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap);
+
+body {
+    margin: 0;
+    font-family: 'Rajdhani', sans-serif;
+    background: #fff;
+}
+.auth-container {
+    display: flex;
+    height: 100vh;
+    text-align: center;
+}
+.auth-left, .auth-right {
+    flex: 1;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.auth-left {
+    background: #fff;
+    max-width: 600px;
+}
+.auth-left h1 {
+    font-size: 36px;
+    margin-bottom: -10px;
+}
+.auth-left p {
+    color: #333;
+}
+form input {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 16px;
+}
+form button {
+    width: 100%;
+    padding: 14px;
+    background: black;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+.forgot-password {
+    text-align: right;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    color: #888;
+    text-decoration: none;
+}
+.divider {
+    text-align: center;
+    margin-top: 10px;
+    color: #666;
+    font-size: 14px;
+}
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+.social-buttons button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.social-buttons a {
+    text-decoration: none;
+}
+.social-buttons a i{
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid violet;
+    padding: 3px;
+    border-radius: 50%;
+}
+.register-text {
+    text-align: center;
+    font-size: 14px;
+}
+.register-text a {
+    color: green;
+    text-decoration: none;
+}
+.auth-right {
+    background: #eaf9e7;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.auth-right .illustration img {
+    max-width: 300px;
+}
+.auth-right p {
+    font-size: 18px;
+    color: #013237;
+}
+form select {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 16px;
+    background: white;
+}
+.input-field {
+    transition: all 0.3s ease;
+}
+.input-field:focus {
+    border-color: #4ca771;
+    box-shadow: 0 0 5px #c0e6ba;
+    outline: none;
+}
+.password-wrapper {
+    position: relative;
+}
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+}
+

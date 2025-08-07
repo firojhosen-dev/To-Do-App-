@@ -1,0 +1,188 @@
+@import url(https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap);
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    animation: slideUp 1.5s ease-out;
+}
+
+.contact_form_container {
+    width: 600px;
+    flex: 1;
+    padding: 40px;
+    animation: slideFromLeft 1s ease-in-out;
+}
+
+.contact_form_container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+a i{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+a i:hover {
+    background-color: #0056b3;
+}
+.image-container {
+    flex: 1;
+    animation: slideFromRight 1s ease-in-out;
+    text-align: center;
+}
+.contact_section_description{
+    align-items: center;
+    padding: 5px;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image-container {
+        height: 300px;
+    }
+}
+
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .contact_form_container, .image-container {
+    padding: 20px;
+  }
+
+  .goto_dashboard {
+    display: inline-block;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact_form_container h2 {
+    font-size: 1.5rem;
+  }
+
+  input, textarea {
+    font-size: 0.95rem;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+  }
+}
