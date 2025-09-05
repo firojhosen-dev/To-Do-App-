@@ -25,7 +25,7 @@ A full-featured, advanced To-Do List web application built with **PHP**, **MySQL
 # Technologies Used
 
 - Backend: PHP 7+
-- Database: MySQL / MariaDB
+- Database: MySQL
 - Frontend: HTML5, CSS3, JavaScript (AJAX, DOM Manipulation)
 - Libraries: [FPDF](http://www.fpdf.org/) (for PDF export)
 
@@ -174,3 +174,4 @@ Connect with **Firoj**:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
