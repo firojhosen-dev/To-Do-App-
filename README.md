@@ -73,7 +73,7 @@ To ensure the project runs successfully, it is important to maintain the correct
 ```text
 todo-app/
 ├── config/
-│   └── db.php # Database connection
+│   └── db.php --> Database connection
 │
 ├── assets/
 │   ├── css/
@@ -86,31 +86,31 @@ todo-app/
 │   │   ├── addTask.js
 │   │   └── login_register.js
 │   │
-│   ├── style.css # Global stylesheet
-│   ├── script.js # Custom JS (dark mode, drag-drop, etc.)
-│   └── toast.js # Toast notification handler
+│   ├── style.css --> Global stylesheet
+│   ├── script.js --> Custom JS (dark mode, drag-drop, etc.)
+│   └── toast.js --> Toast notification handler
 │
 ├── auth/
-│   ├── login.php # User login
-│   ├── register.php # User registration
-│   └── logout.php # Logout and session destroy
+│   ├── login.php --> User login
+│   ├── register.php --> User registration
+│   └── logout.php --> Logout and session destroy
 │
 ├── tasks/
-│   ├── dashboard.php # Main dashboard with task cards
-│   ├── view.php # Single task full description
-│   ├── add_task.php # Task creation handler
-│   ├── edit_task.php # Task edit handler (AJAX optional)
-│   ├── delete_task.php # Soft delete handler
-│   └── complete_task.php # Mark task as completed (AJAX)
+│   ├── dashboard.php --> Main dashboard with task cards
+│   ├── view.php --> Single task full description
+│   ├── add_task.php --> Task creation handler
+│   ├── edit_task.php --> Task edit handler (AJAX optional)
+│   ├── delete_task.php --> Soft delete handler
+│   └── complete_task.php --> Mark task as completed (AJAX)
 │
 ├── includes/
-│   ├── header.php # Reusable header
-│   ├── footer.php # Reusable footer
-│   └── auth_check.php # Session check for protected pages
+│   ├── header.php --> Reusable header
+│   ├── footer.php --> Reusable footer
+│   └── auth_check.php --> Session check for protected pages
 │
 ├── exports/
-│   ├── export_pdf.php # Export tasks to PDF
-│   └── export_csv.php # Export tasks to CSV
+│   ├── export_pdf.php --> Export tasks to PDF
+│   └── export_csv.php --> Export tasks to CSV
 │
 ├── img/
 │   ├── CompanyLogo.png
@@ -118,11 +118,11 @@ todo-app/
 │   ├── LoginImage.png
 │   └── RegisterImage.png
 │
-├── index.php # Redirect to login or dashboard
-├── README.md # Project description
-├── database.sql # SQL file to create all tables
+├── index.php --> Redirect to login or dashboard
+├── README.md --> Project description
+├── database.sql --> SQL file to create all tables
 └── LICENSE
-
+```
 
 ---
 
@@ -178,5 +178,6 @@ Connect with **Firoj**:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
 
