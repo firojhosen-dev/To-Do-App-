@@ -69,55 +69,59 @@ To ensure the project runs successfully, it is important to maintain the correct
 ---
 # Folder Structure
 
-todo-app/<br>
+
+```text
+todo-app/
+├── config/
+│   └── db.php # Database connection
 │
-├── config/<br>
-│   └── db.php              ← Database connection<br>
+├── assets/
+│   ├── css/
+│   │   ├── addTask.css
+│   │   ├── contact.css
+│   │   ├── dashboard.css
+│   │   └── login_register.css
+│   │
+│   ├── js/
+│   │   ├── addTask.js
+│   │   └── login_register.js
+│   │
+│   ├── style.css # Global stylesheet
+│   ├── script.js # Custom JS (dark mode, drag-drop, etc.)
+│   └── toast.js # Toast notification handler
 │
-├── assets/<br>
-|   ├──css/<br>
-|   |    └──addTask.css <br>
-|   |    └──contact.css <br>
-|   |    └──dashboard.css <br>
-|   |    └──login_register.css <br>
-|   ├──js/ <br>
-|   |   └──addTask.js <br>
-|   |   └──login_register.js <br>
-│   └── style.css           ← All CSS<br>
-│   └── script.js           ← Custom JavaScript (Dark mode, drag-drop, etc.)<br>
-│   └── toast.js            ← Toast notification handler<br>
+├── auth/
+│   ├── login.php # User login
+│   ├── register.php # User registration
+│   └── logout.php # Logout and session destroy
 │
-├── auth/<br>
-│   └── login.php           ← User login<br>
-│   └── register.php        ← User registration<br>
-│   └── logout.php          ← Logout and session destroy<br>
+├── tasks/
+│   ├── dashboard.php # Main dashboard with task cards
+│   ├── view.php # Single task full description
+│   ├── add_task.php # Task creation handler
+│   ├── edit_task.php # Task edit handler (AJAX optional)
+│   ├── delete_task.php # Soft delete handler
+│   └── complete_task.php # Mark task as completed (AJAX)
 │
-├── tasks/<br>
-│   └── dashboard.php       ← Main dashboard with task cards<br>
-│   └── view.php            ← Single task full description<br>
-│   └── add_task.php        ← Task creation handler<br>
-│   └── edit_task.php       ← Task edit handler (AJAX optional)<br>
-│   └── delete_task.php     ← Soft delete handler<br>
-│   └── complete_task.php   ← Mark as completed (AJAX)<br>
+├── includes/
+│   ├── header.php # Reusable header
+│   ├── footer.php # Reusable footer
+│   └── auth_check.php # Session check for protected pages
 │
-├── includes/<br>
-│   └── header.php          ← Header HTML (for reuse)<br>
-│   └── footer.php          ← Footer HTML (for reuse)<br>
-│   └── auth_check.php      ← Session check for protected pages<br>
+├── exports/
+│   ├── export_pdf.php # Export tasks to PDF
+│   └── export_csv.php # Export tasks to CSV
 │
-├── exports/<br>
-│   └── export_pdf.php      ← Export tasks to PDF<br>
-│   └── export_csv.php      ← Export tasks to CSV<br>
-|
-├── img/ <br>
-|     └── CompanyLogo.png <br>
-|     └── FirojProfileLogo.jpg <br>
-|     └── LoginImage.png <br>
-|     └── RegisterImage.png <br>
-├── index.php               ← Redirect to login or dashboard<br>
-├── README.md               ← Optional: project description<br>
-├── database.sql            ← SQL file to create all tables<br>
-└──  LICENSE
+├── img/
+│   ├── CompanyLogo.png
+│   ├── FirojProfileLogo.jpg
+│   ├── LoginImage.png
+│   └── RegisterImage.png
+│
+├── index.php # Redirect to login or dashboard
+├── README.md # Project description
+├── database.sql # SQL file to create all tables
+└── LICENSE
 
 
 ---
@@ -174,4 +178,5 @@ Connect with **Firoj**:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
